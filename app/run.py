@@ -10,7 +10,7 @@ from flask import render_template, request, jsonify
 from plotly.graph_objs import Bar
 from sqlalchemy import create_engine
 import joblib
-from transformation import tokenize,multi_class_score
+from .transformation import tokenize,multi_class_score
 # from app.transformation import tokenize,multi_class_score
 # from ../models/transformation import tokenize,multi_class_score
 # from models.transformation import tokenize,multi_class_score
