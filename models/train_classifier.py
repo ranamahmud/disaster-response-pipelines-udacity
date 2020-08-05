@@ -15,7 +15,6 @@ from nltk.stem.porter import PorterStemmer
 from nltk.stem.wordnet import WordNetLemmatizer
 import nltk
 import numpy as np
-import pickle
 import joblib
 nltk.download('wordnet')  # download for lemmatization
 nltk.download('stopwords')

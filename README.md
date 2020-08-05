@@ -5,7 +5,7 @@
 
 1. [Instructions:](#instructions)
 2. [Summary](#summary)
-3. [File Description](#files)
+3. [File Description](#file-desc)
 4. [Dataset](#data)
 5. [Modeling Process](#model)
 6. [Screenshots](#screenshots)
@@ -31,7 +31,7 @@ The data set contains real messages that were sent during disaster events. I've 
 
 This project has an app inside the app folder. Using it an emergency worker can input a new message and get classification results in several categories. The web app also display the visualization of the data.
 
-## File Description <a name="files"></a>
+## File Description <a name="file-desc"></a>
 
 * [**ETL Pipeline Preparation.ipynb**](notebooks/ETL%20Pipeline%20Preparation.ipynb): 
 Notebook contains ETL Pipeline.
