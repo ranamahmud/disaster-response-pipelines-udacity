@@ -10,7 +10,7 @@ from flask import render_template, request, jsonify
 from plotly.graph_objs import Bar
 from sqlalchemy import create_engine
 import joblib
-from .transformation import tokenize,multi_class_score
+from transformation import tokenize,multi_class_score
 # from app.transformation import tokenize,multi_class_score
 # from ../models/transformation import tokenize,multi_class_score
 # from models.transformation import tokenize,multi_class_score
@@ -23,8 +23,8 @@ df = pd.read_sql_table('message_table', engine)
 # engine =  create_engine('sqlite:///data//DisasterResponse.db')
 # df = pd.read_sql_table('message_table', engine)
 # load model
-model = joblib.load("../models/classifier.pkl")
-# model = joblib.load("app/classifier.pkl")
+# model = joblib.load("../models/classifier.pkl")
+model = joblib.load("classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
