@@ -69,7 +69,7 @@ def build_model():
         'clf__random_state': [42]}
 
     cv_rf_tuned = GridSearchCV(pipeline, param_grid=parameters, scoring=score,
-                               n_jobs=-1,
+                            #    n_jobs=-1,
                                cv=5, refit=True, return_train_score=True, verbose=10)
 
     return cv_rf_tuned
