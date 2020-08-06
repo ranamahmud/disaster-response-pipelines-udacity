@@ -16,6 +16,7 @@ from nltk.stem.wordnet import WordNetLemmatizer
 import nltk
 import numpy as np
 import joblib
+import pickle
 nltk.download('wordnet')  # download for lemmatization
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -91,7 +92,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
 def save_model(model, model_filepath):
     model = model.best_estimator_
     joblib.dump(model, model_filepath)
-
+    pickle.dump(model, open("pk"+model_filepath, 'wb'))
 
 def main():
     if len(sys.argv) == 3:
